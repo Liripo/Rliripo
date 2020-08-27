@@ -1,0 +1,31 @@
+---
+title: "Rliripo"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Rliripo}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r include=FALSE}
+library(Rliripo)
+library(dplyr)
+```
+# scale_color_rmb和scale_fill_rmb
+类似于`ggthemes::scale_color_calc`等函数,这是我收集的人民币配色，看下100元配色。
+```{r}
+rmb_pal(money = "100")(6) %>% show_color()
+```
+
+# dna_to_protein
+使用了DNA密码子表，具体可见`dna_pro_table`
+```{r}
+dna_to_protein(c("atg","GCC"))
+```
+
+# print_99
+
+```{r}
+print_99()
+```
