@@ -17,5 +17,6 @@ Imports:
     stringr,
     grid,
     tibble,
-    purrr
+    purrr,
+    Biostrings
 RoxygenNote: 7.1.0
